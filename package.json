@@ -10,5 +10,9 @@
   },
   "devDependencies": {
     "tree-sitter-cli": "0.27.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0x80/tree-sitter-maml.git"
   }
 }

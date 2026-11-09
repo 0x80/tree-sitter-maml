@@ -21,7 +21,10 @@
       {
         "name": "Thijs Koerselman"
       }
-    ]
+    ],
+    "links": {
+      "repository": "https://github.com/0x80/tree-sitter-maml"
+    }
   },
   "bindings": {
     "c": true,
