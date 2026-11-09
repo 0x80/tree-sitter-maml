@@ -1,0 +1,14 @@
+{
+  "name": "tree-sitter-maml",
+  "version": "0.1.0",
+  "description": "MAML grammar for tree-sitter",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "generate": "tree-sitter generate --abi 14",
+    "test": "tree-sitter test"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "0.27.1"
+  }
+}

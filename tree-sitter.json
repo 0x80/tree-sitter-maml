@@ -1,0 +1,35 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "maml",
+      "camelcase": "Maml",
+      "title": "MAML",
+      "scope": "source.maml",
+      "path": ".",
+      "file-types": [
+        "maml"
+      ],
+      "highlights": "queries/highlights.scm"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "MAML grammar for tree-sitter",
+    "authors": [
+      {
+        "name": "Thijs Koerselman"
+      }
+    ]
+  },
+  "bindings": {
+    "c": true,
+    "go": false,
+    "node": false,
+    "python": false,
+    "rust": false,
+    "swift": false,
+    "zig": false
+  }
+}

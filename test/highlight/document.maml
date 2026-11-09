@@ -1,0 +1,24 @@
+{
+# <- punctuation.bracket
+  "quoted": "value" # note
+  # <- property
+  #       ^ punctuation.delimiter
+  #         ^ string
+  #                 ^ comment
+  true: [1, "two", null, false]
+  # <- property
+  #     ^ punctuation.bracket
+  #      ^ number
+  #       ^ punctuation.delimiter
+  #         ^ string
+  #                ^ constant.builtin
+  #                      ^ boolean
+  #                           ^ punctuation.bracket
+  esc: "a\nb"
+  # <- property
+  #     ^ string
+  #      ^ string.escape
+  raw: """x \n y"""
+  #    ^ string
+  #         ^ string
+}

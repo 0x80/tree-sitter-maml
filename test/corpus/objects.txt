@@ -1,0 +1,78 @@
+================================================================================
+Identifier and quoted keys
+================================================================================
+
+{
+  name: "x"
+  "quoted key": 1
+  123: true
+  true: false
+  kebab-and_snake: null
+}
+
+--------------------------------------------------------------------------------
+
+(document
+  (object
+    (pair
+      key: (identifier)
+      value: (string
+        (string_content)))
+    (pair
+      key: (string
+        (string_content))
+      value: (number))
+    (pair
+      key: (identifier)
+      value: (true))
+    (pair
+      key: (identifier)
+      value: (false))
+    (pair
+      key: (identifier)
+      value: (null))))
+
+================================================================================
+Comments around the colon and after a member
+================================================================================
+
+{
+  key # before colon
+    : # after colon
+    1 # after value
+}
+
+--------------------------------------------------------------------------------
+
+(document
+  (object
+    (pair
+      key: (identifier)
+      (comment)
+      (comment)
+      value: (number))
+    (comment)))
+
+================================================================================
+Nested and empty containers
+================================================================================
+
+{ a: {}, b: [], c: { d: [{}] } }
+
+--------------------------------------------------------------------------------
+
+(document
+  (object
+    (pair
+      key: (identifier)
+      value: (object))
+    (pair
+      key: (identifier)
+      value: (array))
+    (pair
+      key: (identifier)
+      value: (object
+        (pair
+          key: (identifier)
+          value: (array
+            (object)))))))

@@ -1,0 +1,28 @@
+# Top-level comment
+{
+  project: "MAML"   # trailing comment
+  tags: [
+    "minimal"
+    "readable",
+  ]
+  "quoted key": "with \"escapes\" \\ \n \t and \u{1F600} # not a comment"
+  123: true
+  true: false
+  null-key_2: null
+  spec: {
+    version: 0.1
+    big: -12.5e+10
+    small: 6.626e-34
+    zero: 0
+  }
+  poem: """
+Roses are "red",
+Violets are ""blue"";
+"""
+  inline: """A raw string with \n kept literally."""
+  empty_obj: {}
+  empty_arr: [], one_line: [1, 2, 3]
+  key
+    : # comment between key and colon
+    "value"
+}
